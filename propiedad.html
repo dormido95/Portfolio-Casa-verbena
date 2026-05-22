@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Propiedad — Casa Verbena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Leaflet: mapa abierto, sin clave de API -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="nav">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <span class="logo-mark">◐</span>
+        <span class="logo-text">Casa Verbena</span>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html#propiedades">Propiedades</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <button id="themeBtn" class="btn-primary btn-nav">
+      <span class="btn-dot"></span>
+      <span class="btn-label">Cambiar ambiente</span>
+    </button>
+  </header>
+
+  <!-- El contenido se inyecta desde propiedad.js -->
+  <main id="detalle"></main>
+
+  <footer class="foot">
+    <span>Av. Alvear 1234, Recoleta</span>
+    <span class="foot-mood">Tono actual: <strong id="moodLabel">Papel</strong></span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="theme.js"></script>
+  <script src="propiedad.js"></script>
+</body>
+</html>
